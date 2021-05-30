@@ -2,6 +2,9 @@
 
 :root {
     --primary-color: #20568c;
+    --secondary-color: #0f263c;
+    --dark-color: #043868;
+    --light-color: #f4f4f4;
 }
 
 /* Universal selector */
@@ -165,4 +168,12 @@ font-size: 15px;
 
 .cloud .grid {
     grid-template-columns: 4fr 3fr;
+}
+
+/* Languages */
+
+.languages .card {
+text-align: center;
+margin: 18px 10px 40px;
+
 }
