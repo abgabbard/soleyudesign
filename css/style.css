@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-    --primary-color: #047aed;
+    --primary-color: #20568c;
 }
 
 /* Universal selector */
@@ -99,35 +99,53 @@ position: relative;
     z-index: 100;
 }
 
-
-/* Utilities */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
+.showcase-form .form-control {
+    margin: 30px 0;
 }
 
-.card {
-    background-color: white;;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-    padding: 20px;
-    margin: 10px;
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+border: 0;
+border-bottom: 1px solid #b4becb;
+width: 100%;
+padding: 3px;
+font-size: 15px;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-    height: 100%;
+.showcase-form input:focus {
+    outline: none;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.showcase::before,.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    transform:skewY(-3deg);
+    -webkit-transform:skewY(-3deg);
+    -moz-transform:skewY(-3deg);
+    -ms-transform:skewY(-3deg);
+}
+
+/* Stats */
+
+.stats {
+    padding-top: 100px;
+}
+
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
+}
+
+.stats .grid h3 {
+    font-size: 35px;
+}
+
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
 }
