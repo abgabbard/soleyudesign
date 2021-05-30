@@ -33,6 +33,12 @@
 .btn:hover {
     transform: scale(0.95);
 }
+/* Backgrounds and Colored Buttons */
+
+.bg-primary, .btn-primary {
+background-color: var(--primary-color);
+}
+
 
 .text-center {
 text-align: center;
